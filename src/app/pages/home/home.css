@@ -1,0 +1,28 @@
+#homepagecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+}
+img {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 475px;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: rgb(151, 115, 151);
+  border-radius: 10px;
+  border: 3px solid rgb(59, 40, 59);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+#headingandtext {
+  width: 100%;
+  max-width: 475;
+}

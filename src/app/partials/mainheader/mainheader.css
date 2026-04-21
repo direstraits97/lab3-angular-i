@@ -1,0 +1,44 @@
+#topheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2%;
+  background-color: rgb(117, 175, 117);
+  margin-bottom: 60px;
+}
+#logo {
+  width: 250px;
+  height: 250px;
+}
+h1 {
+  font-family: 'DynaPuff', system-ui;
+  background-color: rgb(16, 34, 16);
+  padding: 1%;
+  border-radius: 10px;
+  border: 5px solid rgb(55, 94, 55);
+  font-size: 2.8rem;
+  color: white;
+}
+nav {
+  background-color: rgb(49, 36, 46);
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px black;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding-left: 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: 'DynaPuff', system-ui;
+}
+nav a:hover {
+  text-decoration: underline;
+}

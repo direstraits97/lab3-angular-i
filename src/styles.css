@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: rgb(56, 92, 65);
+  margin: 0;
+  line-height: 1.7em;
+}
+main {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+h2 {
+  font-family: 'DynaPuff', system-ui;
+  text-align: center;
+}
