@@ -5,7 +5,7 @@
       <div class="labelandinput">
         <label for="fahrenheit">Fahrenheit:</label>
         <input
-          type="text"
+          type="number"
           id="fahrenheit"
           name="fahrenheit"
           (input)="fToC()"
@@ -14,7 +14,7 @@
       </div>
       <div class="labelandinput">
         <label for="celsius">Celsius:</label>
-        <input type="text" id="celsius" name="celsius" (input)="CtoF()" [(ngModel)]="celsius" />
+        <input type="number" id="celsius" name="celsius" (input)="CtoF()" [(ngModel)]="celsius" />
       </div>
     </div>
   </div>
@@ -23,11 +23,11 @@
     <div class="inputcontainer">
       <div class="labelandinput">
         <label for="meter">Meter:</label>
-        <input type="text" id="meter" name="meter" />
+        <input type="number" id="meter" name="meter" (input)="mToF()" [(ngModel)]="meter" />
       </div>
       <div class="labelandinput">
         <label for="foot">Foot:</label>
-        <input type="text" id="foot" name="foot" />
+        <input type="number" id="foot" name="foot" (input)="fToM()" [(ngModel)]="feet" />
       </div>
     </div>
   </div>
