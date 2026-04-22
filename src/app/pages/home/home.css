@@ -23,5 +23,18 @@ p {
 }
 #headingandtext {
   width: 100%;
-  max-width: 475;
+}
+
+@media (max-width: 1024px) {
+  #homepagecontainer {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  #homepagecontainer {
+    width: 90%;
+  }
+  p {
+    padding: 0.5em;
+  }
 }

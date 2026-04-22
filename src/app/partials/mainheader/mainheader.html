@@ -1,13 +1,22 @@
 <header>
   <div id="topheader">
     <img id="logo" src="/bilder/angularilogo.svg" alt="" fetchpriority="high" />
-    <h1>Laboration 3</h1>
+    <h1 id="bigscreenheading">Laboration 3</h1>
+    <button id="openmenu" aria-label="Öppna meny" (click)="openMenu()">
+      <img src="/bilder/openmenu.svg" alt="" />
+    </button>
   </div>
-  <nav>
+  <nav id="navbar" [class.show]="open" [ariaExpanded]="open">
     <ul>
-      <li><a routerLink="/">Startsidan</a></li>
-      <li><a routerLink="/converter">Omvandlaren</a></li>
-      <li><a routerLink="/about">Om sidan</a></li>
+      <li id="closemenulist">
+        <button id="closemenu" aria-label="Stäng meny" (click)="closeMenu()">
+          <img src="/bilder/closemenu.svg" alt="" />
+        </button>
+      </li>
+      <li><a routerLink="/" (click)="closeMenu()">Startsidan</a></li>
+      <li><a routerLink="/converter" (click)="closeMenu()">Omvandlaren</a></li>
+      <li><a routerLink="/about" (click)="closeMenu()">Om sidan</a></li>
     </ul>
   </nav>
+  <h1 id="smallscreenheading">Laboration 3</h1>
 </header>

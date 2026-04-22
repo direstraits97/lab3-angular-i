@@ -23,3 +23,18 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 1024px) {
+  .convertercontainer {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .inputcontainer {
+    flex-direction: column;
+  }
+  .convertercontainer {
+    width: 90%;
+  }
+}

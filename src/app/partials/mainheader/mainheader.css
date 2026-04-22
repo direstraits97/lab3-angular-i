@@ -10,13 +10,25 @@
   width: 250px;
   height: 250px;
 }
-h1 {
+#bigscreenheading {
   background-color: rgb(16, 34, 16);
-  padding: 1%;
+  padding: 1.5%;
   border-radius: 10px;
   border: 5px solid rgb(55, 94, 55);
   font-size: 2.8rem;
   color: white;
+}
+#smallscreenheading {
+  display: none;
+  background-color: rgb(16, 34, 16);
+  padding: 1.5%;
+  border-radius: 10px;
+  border: 5px solid rgb(46, 36, 53);
+  text-align: center;
+  color: white;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 nav {
   background-color: rgb(49, 36, 46);
@@ -33,10 +45,82 @@ nav ul {
   justify-content: space-around;
   padding-left: 0;
 }
-nav a {
+nav ul a {
   color: white;
   text-decoration: none;
 }
-nav a:hover {
+nav ul a:hover {
   text-decoration: underline;
+}
+#closemenulist {
+  display: none;
+}
+#openmenu {
+  display: none;
+  border: none;
+  background: none;
+}
+#openmenu img {
+  width: 100px;
+  height: 100px;
+}
+#closemenu {
+  display: none;
+  border: none;
+  background: none;
+}
+#closemenu img {
+  width: 100px;
+  height: 100px;
+}
+.show {
+  right: 0;
+}
+@media (max-width: 1024px) {
+  nav {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  #closemenulist {
+    display: block;
+  }
+  #openmenu {
+    display: block;
+  }
+  #closemenu {
+    display: block;
+  }
+  #bigscreenheading {
+    display: none;
+  }
+  #smallscreenheading {
+    display: block;
+  }
+  #logo {
+    width: 175px;
+    height: 175px;
+  }
+  #topheader {
+    justify-content: space-between;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    border-radius: 0;
+    right: -110%;
+    transition: right 300ms ease-out;
+    height: 100vh;
+    width: 100vw;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    height: 100vh;
+    justify-content: space-evenly;
+  }
+  nav ul a {
+    margin-right: 3rem;
+  }
 }
