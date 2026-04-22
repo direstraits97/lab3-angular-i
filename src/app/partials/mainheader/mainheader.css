@@ -11,7 +11,6 @@
   height: 250px;
 }
 h1 {
-  font-family: 'DynaPuff', system-ui;
   background-color: rgb(16, 34, 16);
   padding: 1%;
   border-radius: 10px;
@@ -37,7 +36,6 @@ nav ul {
 nav a {
   color: white;
   text-decoration: none;
-  font-family: 'DynaPuff', system-ui;
 }
 nav a:hover {
   text-decoration: underline;

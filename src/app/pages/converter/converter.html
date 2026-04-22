@@ -1,1 +1,34 @@
-<p>converter works!</p>
+<div id="outerconvertercontainer">
+  <div class="convertercontainer">
+    <h2>Fahrenheit och Celsius</h2>
+    <div class="inputcontainer">
+      <div class="labelandinput">
+        <label for="fahrenheit">Fahrenheit:</label>
+        <input
+          type="text"
+          id="fahrenheit"
+          name="fahrenheit"
+          (input)="fToC()"
+          [(ngModel)]="fahrenheit"
+        />
+      </div>
+      <div class="labelandinput">
+        <label for="celsius">Celsius:</label>
+        <input type="text" id="celsius" name="celsius" (input)="CtoF()" [(ngModel)]="celsius" />
+      </div>
+    </div>
+  </div>
+  <div class="convertercontainer">
+    <h2>Meter och Foot</h2>
+    <div class="inputcontainer">
+      <div class="labelandinput">
+        <label for="meter">Meter:</label>
+        <input type="text" id="meter" name="meter" />
+      </div>
+      <div class="labelandinput">
+        <label for="foot">Foot:</label>
+        <input type="text" id="foot" name="foot" />
+      </div>
+    </div>
+  </div>
+</div>

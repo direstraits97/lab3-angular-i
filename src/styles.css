@@ -2,12 +2,18 @@ body {
   background-color: rgb(56, 92, 65);
   margin: 0;
   line-height: 1.7em;
+  font-family: 'DynaPuff', system-ui;
 }
 main {
   margin-top: 70px;
   margin-bottom: 70px;
 }
 h2 {
-  font-family: 'DynaPuff', system-ui;
   text-align: center;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+}
+input {
+  font-family: 'Roboto', sans-serif;
 }
