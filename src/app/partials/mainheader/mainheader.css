@@ -33,6 +33,7 @@
 nav {
   background-color: rgb(49, 36, 46);
   width: 40%;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   padding: 1%;

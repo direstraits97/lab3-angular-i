@@ -1,3 +1,9 @@
+img {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 475px;
+}
+
 #homepagecontainer {
   display: flex;
   flex-direction: column;
@@ -6,11 +12,6 @@
   margin-left: auto;
   margin-right: auto;
   gap: 20px;
-}
-img {
-  border-radius: 10px;
-  width: 100%;
-  max-width: 475px;
 }
 p {
   text-align: center;
@@ -21,10 +22,6 @@ p {
   margin-right: auto;
   padding: 1.5em;
 }
-#headingandtext {
-  width: 100%;
-}
-
 @media (max-width: 1024px) {
   #homepagecontainer {
     width: 80%;
