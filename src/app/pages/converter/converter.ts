@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+/**
+ * Denna fil konverterar fahrenheit och celsius sinsemellan, samt meter och foot.
+ * Av: Josefine Backlund
+ */
 @Component({
   selector: 'app-converter',
   imports: [FormsModule],
@@ -11,8 +14,9 @@ export class Converter {
   celsius: string = '';
   fahrenheit: string = '';
   feet: string = '';
-  meter: string = '';
+  meter: string = ''; //Attribut med tomma strängar som kommer att manipuleras.
 
+  /* Nedan metoder är till för att användas direkt i HTML:en med de manipulerade värden som beräknats fram. */
   fToC() {
     this.convertToCelsius(this.fahrenheit);
   }
@@ -27,6 +31,9 @@ export class Converter {
     this.convertToMeter(this.feet);
   }
 
+  /* Dessa metoder fungerar lika i utförande med varierande formler för att uppnå rätt värde.
+  En textsträng från input skjutsas in och omvandlas till nummer för att beräknas, och omvandlas
+  till sträng igen för att skrivas ut till input igen. */
   private convertToFahrenheit(input: string): void {
     let number: number = Number(input);
     let calc: number = number * 1.8 + 32;
