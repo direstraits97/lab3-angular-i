@@ -7,3 +7,4 @@ Webbplatsen har tre undersidor: en startsida, en sida som konverterar värden sa
 Den huvudsakliga koden som skapats används under sidan som konverterar värden. Med hjälp av databindning kunde properties från klassen skrivas ut direkt i HTML-filen, efter att de genomgått de metoder som anropats.
 
 ## Länk till webbplats
+https://joba1602lab3angulari.netlify.app/
